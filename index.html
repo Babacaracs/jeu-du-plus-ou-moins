@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeu</title>
+</head>
+<body>
+	<!-- <script type="text/javascript">
+	 	
+	
+	var num = Math.floor(Math.random() *100) + 1;
+	// if (Number.isInteger(nbr))
+	// {
+
+	 
+	  for (var i = 0; i < 6; i++) 
+	  {
+	  	var nbr = parseInt(prompt("Veuillez entrez un nombre comprit entre 0 et 100"));
+	  	var rest =5-i;
+	  	
+	  	if (nbr==num) 
+	  	
+	  	{
+	  		alert("Vous avez trouver la bonne reponse! \n"+num)
+	  		break;
+	  	}
+	  	
+	  		 if (nbr<num) 
+	  	
+	  	{
+	  		alert("Le nombre entrer est inferieur a nombre secret \nil vous reste : "+rest+" chance restant");
+	  		
+	  		
+	  	}
+	  	
+	  		if (nbr>num) 
+	  	
+	  	{
+	  		alert("Le nombre entrer est supérieur a nombre secret \n\n il vous reste : "+rest+" chance restant");
+	  			  		
+	  	}
+
+	  	if (i==5) 
+	  	
+	  	{
+	  		alert("Dommage vous avez échoué,\n la reponse est : "+num+"\nretentez votre chance");
+	  		break;
+	  		
+	}
+	// {else
+	// 	alert("Entrer un nombre entier");
+	// 	var nbr = parseInt(prompt("Veuillez entrez un nombre comprit entre 0 et 100"));
+	// 	i--;
+
+	// }
+
+	  	}
+	  	
+	  
+	  		
+	
+	
+	</script> -->
+
+
+	<script type="text/javascript">
+	 	
+	
+	var num = Math.floor(Math.random() *100) + 1;
+	
+	
+
+	 
+	  for (var i = 0; i < 6; i++) 
+	  {
+	  	var nbr = parseInt(prompt("Veuillez entrer un nombre compris entre 0 et 100"));
+	  	var rest =5-i;
+	  	 if (Number.isInteger(nbr) && (0<=nbr &&  100>=nbr))
+	  	 {
+
+	  	if (nbr==num) 
+	  	
+	  	{
+	  		alert("Vous avez trouvé la bonne reponse! \n"+num)
+	  		break;
+	  	}
+	  	
+	  		 if (nbr<num) 
+	  	
+	  	{
+	  		alert("Le nombre entré est inferieur au nombre secret \nil vous reste : "+rest+" chance(s) restante(s)");
+	  		
+	  		
+	  	}
+	  	
+	  		if (nbr>num) 
+	  	
+	  	{
+	  		alert("Le nombre entré est supérieur au nombre secret \n\n il vous reste : "+rest+" chance(s) restante(s)");
+	  			  		
+	  	}
+
+	  	if (i==5) 
+	  	
+	  	{
+	  		alert("Dommage vous avez échoué,\n la reponse est : "+num+"\nretentez votre chance");
+	  		break;
+	  		
+	}
+	
+	  	}
+	  	
+	  	 	else
+	  	 	{
+		alert("Entrez un nombre entier ou comprit entre 0 et 100");
+	 //	var nbr = parseInt(prompt("Veuillez entrez un nombre comprit entre 0 et 100"));
+	 	i--;
+
+	 }
+	}
+
+	  
+	  		
+	
+	
+	</script>
+
+</body>
+</html>		
